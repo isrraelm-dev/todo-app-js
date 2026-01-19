@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>📝 Mi Todo List</h1>
+
+       <input id="taskInput" type="text" placeholder="Escribe una tarea">
+       <button id="addBtn">Agregar</button>
+
+    <div class="filters">
+       <button data-filter="all">Todas</button>
+       <button data-filter="pending">Pendientes</button>
+       <button data-filter="completed">Completadas</button>
+    </div>
+
+        <ul id="taskList"></ul>
+        <p id="counter">Tareas pendientes: 0</p>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

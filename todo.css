@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f172a, #020617);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.app {
+    background-color: #020617;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+    border: 1px solid #1e293b;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color:#e5e7eb
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    color: #e5e7eb;
+    margin-bottom: 10px;
+}
+
+input: ::placeholder{
+    color: #64748b
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #334155;
+    color: #e5e7eb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #475569;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #020617;
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    color: #e5e7eb;
+    border: 1px solid #1e293b;
+}
+
+li:hover {
+    background-color: #020617;
+    border-color: #334155;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+#counter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+.filters {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.filters button {
+    flex: 1;
+    background-color: #1e293b;
+    font-size: 12px;
+}
+
+.filters button:hover {
+    background-color: #334155;
+}
+
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+.delete-btn:hover {
+    color: #f87171;
+}
